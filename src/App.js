@@ -4,7 +4,11 @@ import './App.css';
 import './i18n';
 import { withTranslation } from 'react-i18next';
 
-function App({ t }) {
+function changeLanguage(i18n, lang) {
+  i18n.changeLanguage(lang);
+}
+
+function App({ t, i18n }) {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +24,11 @@ function App({ t }) {
         >
           {t('Learn React')}
         </a>
+        <div>
+          <p>Change Language</p>
+          <button onClick={() => changeLanguage(i18n, 'en')}>en</button>
+          <button onClick={() => changeLanguage(i18n, 'ja')}>ja</button>
+        </div>
       </header>
     </div>
   );
