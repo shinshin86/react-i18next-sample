@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "i18next": "^20.4.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-i18next": "^11.11.4",
-    "react-scripts": "4.0.3"
+    "i18next": "^21.7.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-i18next": "^11.16.8",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
@@ -32,7 +32,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^2.3.2"
+    "prettier": "^2.6.2"
   },
   "prettier": {
     "singleQuote": true
