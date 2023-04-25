@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './i18n';
-import { withTranslation, Trans } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 const FILE_NAME = 'src/App.js';
 
@@ -11,7 +11,9 @@ const langTextMap = {
   ja: '言語',
 };
 
-function App({ t, i18n }) {
+function App() {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="App">
       <header className="App-header">
@@ -41,4 +43,4 @@ function App({ t, i18n }) {
   );
 }
 
-export default withTranslation()(App);
+export default App;
