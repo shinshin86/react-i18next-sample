@@ -4,9 +4,10 @@ import './App.css';
 import './i18n';
 import { withTranslation, Trans } from 'react-i18next';
 
-function changeLanguage(i18n, lang) {
-  i18n.changeLanguage(lang);
-}
+const langTextMap = {
+  en: 'Language',
+  ja: '言語',
+};
 
 function App({ t, i18n }) {
   const filename = 'src/App.js';
@@ -29,9 +30,11 @@ function App({ t, i18n }) {
           {t('Learn React')}
         </a>
         <div>
-          <p>Change Language</p>
-          <button onClick={() => changeLanguage(i18n, 'en')}>en</button>
-          <button onClick={() => changeLanguage(i18n, 'ja')}>ja</button>
+          <p>
+            {t('Change Language', { langText: langTextMap[i18n.language] })}
+          </p>
+          <button onClick={() => i18n.changeLanguage('en')}>en</button>
+          <button onClick={() => i18n.changeLanguage('ja')}>ja</button>
         </div>
       </header>
     </div>

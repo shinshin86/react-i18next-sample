@@ -1,4 +1,5 @@
 {
   "Learn React": "Reactを学ぶ",
-  "Save to Reload text": "<1>{{filename}}</1>を編集して保存すると、リロードされます。"
+  "Save to Reload text": "<1>{{filename}}</1>を編集して保存すると、リロードされます。",
+  "Change Language": "{{langText}}を切り替える"
 }
