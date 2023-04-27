@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "i18next": "^21.9.1",
+    "i18next": "^22.4.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^11.18.5",
+    "react-i18next": "^12.2.2",
     "react-scripts": "5.0.1"
   },
   "scripts": {
@@ -32,7 +32,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^2.8.8"
   },
   "prettier": {
     "singleQuote": true
